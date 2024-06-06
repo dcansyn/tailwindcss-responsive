@@ -1,0 +1,20 @@
+{
+	"Component Base": {
+		"scope": "typescriptreact",
+		"prefix": "componentBase",
+		"body": [
+			"import { merge, responsiveMerge } from \"@/core/style\";",
+			"import { ${1:name}Props } from \"./${1:name}Props\";",
+			"import { ${1:name}Variants } from \"./${1:name}Variants\";",
+			"",
+			"const ${1:name} = ({ className, template, size, xs, sm, md, lg, xl, xxl }: ${1:name}Props): JSX.Element => {",
+			"  let variants = ${1:name}Variants({ template, size, className });",
+			"  let responsive = responsiveMerge({ xs, sm, md, lg, xl, xxl });",
+			"",
+			"  return <${0:Component} className={merge(variants, responsive)} />;",
+			"};",
+			"",
+			"export default ${1:name};",
+		]
+	}
+}

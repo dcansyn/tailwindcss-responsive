@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Server Side",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "yarn debug"
+    },
+    {
+      "name": "Full Stack",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "yarn debug",
+      "serverReadyAction": {
+        "pattern": "- Local:.+(https?://.+)",
+        "uriFormat": "%s",
+        "action": "debugWithChrome"
+      }
+    }
+  ]
+}

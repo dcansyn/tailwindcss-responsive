@@ -1,0 +1,24 @@
+{
+	"Component Variants": {
+		"scope": "typescript",
+		"prefix": "componentVariants",
+		"body": [
+			"import { cva } from \"class-variance-authority\";",
+			"",
+			"export const ${1:name}Variants = cva(\"$0\", {",
+			"  variants: {",
+			"    template: {",
+			"      default: \"\",",
+			"    },",
+			"    size: {",
+			"      default: \"\",",
+			"    },",
+			"  },",
+			"  defaultVariants: {",
+			"    template: \"default\",",
+			"    size: \"default\",",
+			"  },",
+			"});",
+		]
+	}
+}

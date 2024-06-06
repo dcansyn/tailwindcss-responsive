@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+With the infrastructure here, you don't need to write your TailwindCss usage in a long way on a single line.
 
 ## Getting Started
 
-First, run the development server:
+- Define the variables you want to use in `src/core/style/ResponsiveProps.ts`
+- You can change the screen sizes in `tailwind.config.ts`
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+<Button
+  className="bg-blue-300 text-white hover:shadow-xl"
+  xs="bg-white text-black"
+  sm="bg-black text-white"
+  md="w-2/4"
+  lg="w-3/4"
+  xl="h-20"
+  xxl="h-10 w-2/5"
+>
+  Buralar eskiden dutluktu!
+</Button>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Tailwind CSS IntelliSense settings have been added in `.vscode/settings.json`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Have fun and please don't forget to give stars :)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[![Can Sayan](https://cansayan.com.tr/assets/img/icon.ico)](https://cansayan.com.tr)

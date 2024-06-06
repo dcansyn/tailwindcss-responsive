@@ -1,0 +1,16 @@
+{
+	"Component Props": {
+		"scope": "typescript",
+		"prefix": "componentProps",
+		"body": [
+			"import { ResponsiveProps } from \"@/core/style/ResponsiveProps\";",
+			"import { VariantProps } from \"class-variance-authority\";",
+			"import { ${1:name}Variants } from \"./${1:name}Variants\";",
+			"",
+			"export type ${1:name}Props = VariantProps<typeof ${1:name}Variants> &",
+			"  ResponsiveProps & {",
+			"    className?: string | undefined;$0",
+			"  };",
+		]
+	}
+}
